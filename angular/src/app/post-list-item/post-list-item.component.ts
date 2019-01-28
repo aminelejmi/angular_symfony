@@ -11,16 +11,6 @@ export class PostListItemComponent implements OnInit {
     @Input() id: number;
     @Input() title: string;
     @Input() content: string;
-    @Input() loveIts: number;
-    @Input() created_at: Date;
-
-    onLoveIt() {
-        this.loveIts++;
-    }
-
-    onDontLoveIt() {
-        this.loveIts--;
-    }
 
     constructor(private postService: PostService) {
     }
